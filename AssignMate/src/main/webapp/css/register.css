@@ -1,0 +1,144 @@
+/* Background */
+body.bg-img {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('../images/bg_reg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Transparent dark overlay */
+.overlay {
+  background-color: rgba(10, 10, 20, 0.75);
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+/* Form container */
+.register-container {
+  max-width: 550px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 14px;
+  background-color: rgba(17, 24, 39, 0.9);
+  border: 2px solid #2563eb;
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.2);
+}
+
+/* Title */
+.register-title {
+  text-align: center;
+  font-size: 30px;
+  color: #60a5fa;
+  margin-bottom: 25px;
+}
+
+/* Labels & Inputs */
+.form-grid label {
+  display: block;
+  margin-top: 16px;
+  font-weight: 500;
+  color: #dbeafe;
+}
+
+.form-grid input[type="text"],
+.form-grid input[type="email"],
+.form-grid input[type="password"],
+.form-grid input[type="file"],
+.form-grid input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  background-color: #1e293b;
+  color: #f9fafb;
+  border: 1px solid #334155;
+}
+
+.form-grid input:focus {
+  outline: 2px solid #60a5fa;
+  border-color: #60a5fa;
+}
+
+.terms-line {
+  display: flex;
+  align-items: center;     /* ensures vertical alignment */
+  gap: 10px;
+  margin: 20px 0 10px;
+  font-size: 14px;
+  color: #d1d5db;
+  line-height: 1.4;
+}
+
+.terms-line input[type="checkbox"] {
+  accent-color: #60a5fa;
+  width: 18px;
+  height: 18px;
+  margin: 0; /* remove any top offset */
+  vertical-align: middle; /* final vertical alignment fix */
+}
+
+.terms-line label {
+  margin: 0;
+  padding: 0;
+}
+
+.terms-line a {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.full-btn {
+  width: 100%;
+  background: #6366f1;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.full-btn:hover {
+  background: #3b82f6;
+  box-shadow: 0 0 10px rgba(96, 165, 250, 0.4);
+}
+
+/* Bottom login note */
+.bottom-link,
+.login-note {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.bottom-link a,
+.login-note a {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+/* Error box */
+.error-box {
+  background-color: #fee2e2;
+  color: #991b1b;
+  padding: 10px 15px;
+  border-left: 4px solid #b91c1c;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* Modal Overlay */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+

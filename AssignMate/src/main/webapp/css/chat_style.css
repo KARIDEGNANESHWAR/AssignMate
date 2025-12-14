@@ -1,0 +1,109 @@
+
+
+body {
+  background-color: #0e0e0e;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+  background-image: linear-gradient(135deg, #0f0f0f 0%, #1c1c1c 100%);
+}
+
+h2 {
+  text-align: center;
+  color: #25D366;
+  text-shadow: 0 0 8px #25D36688;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#chat-box {
+  height: 420px;
+  overflow-y: auto;
+  background: rgba(30, 30, 30, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 20px #25d36644, inset 0 0 10px #000;
+  border: 1px solid #333;
+  backdrop-filter: blur(5px);
+}
+
+.message {
+  margin: 12px 0;
+  padding: 12px 18px;
+  border-radius: 16px;
+  max-width: 75%;
+  word-wrap: break-word;
+  clear: both;
+  font-size: 15px;
+  line-height: 1.6;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.right {
+  background: linear-gradient(135deg, #128c7e, #25d366);
+  float: right;
+  text-align: right;
+  color: #fff;
+  box-shadow: 0 0 12px #25d36688;
+}
+
+.left {
+  background: linear-gradient(135deg, #2e2e2e, #444);
+  float: left;
+  text-align: left;
+  color: #ddd;
+  box-shadow: 0 0 10px #222;
+}
+
+.timestamp {
+  font-size: 11px;
+  color: #bbb;
+  display: block;
+  margin-top: 5px;
+}
+
+textarea#message {
+  width: 98%;
+  height: 60px;
+  background-color: #111;
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 14px;
+  color: #fff;
+  resize: none;
+  box-shadow: 0 0 10px #25d36644 inset;
+  margin-top: 15px;
+}
+
+textarea#message::placeholder {
+  color: #888;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #25d36688;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #128c7e, #0a684e);
+  transform: scale(1.02);
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
